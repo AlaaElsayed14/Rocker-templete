@@ -10,20 +10,24 @@
 </head>
 <body>
 
-    <!-- ------------------------------ start header ------------------------ -->
+    <!-- ------------------------------ start header ---------------------- -->
     <header>
         <div class="container">
+            <!-- <label for="bars"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="bars"> -->
+            <button class="btn"><i class="fas fa-bars"></i></button>
             <div class="logo">
                <img src="images/logo.png">
             </div>
-            <nav>
-                <ul >
-                    <li class="dropdown" ><a href="#">furniture</a>
+
+            <nav class="list">
+                <ul>
+                    <li class="dropdown" ><a href="#">furniture</a> <i class="fas fa-plus-circle" id="drop-nav"></i>
                         <div class="dropdown-list">
 
                             <div class="table1">
-                                <h4><a href="#">tables</a></h4>
-                                <ul>
+                                <h4 id="tables1"><a href="#">tables</a> <i class="fas fa-plus-circle" id="drop-tables"></i></h4>
+                                <ul id="table-list1">
                                     <li class="list-item"><a href="#">study table 1</a></li>
                                     <li class="list-item"><a href="#">study table 2</a></li>
                                     <li class="list-item"><a href="#">study table 3</a></li>
@@ -33,8 +37,8 @@
                             </div>
 
                             <div class="table1">
-                                <h4><a href="#">tables</a></h4>
-                                <ul>
+                                <h4 id="tables2"><a href="#">Dining</a> <i class="fas fa-plus-circle" id="drop-dining"></i></h4>
+                                <ul id="table-list2">
                                     <li class="list-item"><a href="#">study table 1</a></li>
                                     <li class="list-item"><a href="#">study table 2</a></li>
                                     <li class="list-item"><a href="#">study table 3</a></li>
@@ -44,8 +48,8 @@
                             </div>
 
                             <div class="table1">
-                                <h4><a href="#">tables</a></h4>
-                                <ul>
+                                <h4 id="tables3"><a href="#">Sofa</a> <i class="fas fa-plus-circle" id="drop-sofa"></i></h4>
+                                <ul id="table-list3">
                                     <li class="list-item"><a href="#">study table 1</a></li>
                                     <li class="list-item"><a href="#">study table 2</a></li>
                                     <li class="list-item"><a href="#">study table 3</a></li>
@@ -56,13 +60,15 @@
                             
                         </div> 
                     </li>
+                
                     <li ><a href="#">armoires</a>  </li>
                     <li ><a href="#">study table</a></li>
                     <li ><a href="#">plastic chair</a></li>
                     <li ><a href="#">wardrobes</a></li>
                     <li><a href="#"> more</a></li>
                 </ul>
-                </nav>
+            </nav>
+            
             <div class="header-icons">
                 <a href="#"><i class="fas fa-search fa-lg"></i></a>        
                 <a href="#"><i class="far fa-user fa-lg"></i></a> 
@@ -71,11 +77,9 @@
             </div>
         </div>
     </header>
-
     <!-- ------------------------------ end header ------------------------ -->
 
     <!-- ------------------------------ start main ------------------------ -->
-
     <main>
             <div class="main-img">
                 <img src="images/sample-25.webp" alt="">
@@ -126,7 +130,6 @@
     </section>
     <!-- ------------------------------ end category section ------------------------ -->
     <!-- ------------------------------ start content section ------------------------ -->
-
     <section class="content">
        <div class="container">
            <div class="testimonial">
@@ -239,6 +242,7 @@
                     <li><a href="#">armoires</a></li>
                 </ul>
             </div>
+
             <div class="feature-items">
                 <div class="feature-item">
                     <div class="image">
@@ -468,8 +472,8 @@
                </div>
 
                <div class="footer-info">
-                   <h2><a href="#">information</a></h2>
-                   <ul>
+                   <h2 id="toggle-icon1"><a href="#">information</a> <i class="fas fa-angle-down" ></i></h2> 
+                   <ul class="footer-list list1">
                        <li><a href="#">about us</a></li>
                        <li><a href="#">delivary information</a></li>
                        <li><a href="#">privacy policy</a></li>
@@ -479,8 +483,8 @@
                </div>
 
                <div class="footer-account">
-                   <h2><a href="#">my account</a></h2>
-                   <ul>
+                   <h2 id="toggle-icon2"> <a href="#">my account</a> <i class="fas fa-angle-down" > </i></h2>
+                   <ul class="footer-list list2">
                        <li><a href="#">my account</a></li>
                        <li><a href="#">order history</a></li>
                        <li><a href="#">wish list</a></li>
@@ -519,7 +523,6 @@
 
     <!-- ------------------------------ end footer section ------------------------ -->
 
-    
-
+  <script src="js/app.js"></script>
 </body>
 </html>
